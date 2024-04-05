@@ -1,4 +1,4 @@
-:root{
+:root {
     --color-yell: #EAB738;
     --color-orange: #F8671C;
     --color-red: #DF0915;
@@ -7,34 +7,57 @@
     --radius: 10px;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: inter, sans-serif;
-    
+
 }
 
-body::-webkit-scrollbar{
-	width: 5px;
-}
-body::-webkit-scrollbar-track{
-	background: var(--color-white);
-}
-body::-webkit-scrollbar-thumb{
-	background: var(--color-orange);
+body::-webkit-scrollbar {
+    width: 5px;
 }
 
-p, span, a{
+body::-webkit-scrollbar-track {
+    background: var(--color-white);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--color-orange);
+}
+
+p,
+span,
+a {
     font-size: 16px;
     color: rgb(23, 23, 23);
     font-weight: 400;
     text-decoration: none;
 }
 
-.limitador{
+.limitador {
     max-width: 1280px;
     width: 100%;
-    background-color: rgb(187, 233, 187);
+    /* background-color: rgb(187, 233, 187); */
     height: fit-content;
+}
+
+/* *TITLE */
+.star {
+    background-image: url(../img/itens/title-star.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50px;
+    width: 60px;
+}
+
+.title {
+    font-size: 30PX;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.darken {
+    mix-blend-mode: darken;
 }
