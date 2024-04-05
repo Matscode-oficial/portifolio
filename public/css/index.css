@@ -1,0 +1,43 @@
+/**MENU */
+.menu{
+    background-color:var(--color-white);
+    border-bottom: 4px solid var(--color-red);
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+}
+
+.menu nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+}
+
+/**SEPARAR O CONTEÚDO */
+.separate{
+    width: 100%;
+    height: fit-content;
+}
+
+.separate .colors{
+    display: grid;
+    grid-template-rows: repeat(4, 15px);
+    width: 100%;
+}
+
+.colors div:nth-child(1) {
+    background-color: var(--color-yell); /* Primeira linha com fundo vermelho */
+}
+
+.colors div:nth-child(2) {
+    background-color: var(--color-orange); /* Segunda linha com fundo verde */
+}
+
+.colors div:nth-child(3) {
+    background-color: var(--color-red); /* Terceira linha com fundo azul */
+}
+
+.colors div:nth-child(4) {
+    background-color:var(--color-blue); /* Quarta linha com fundo amarelo */
+}
