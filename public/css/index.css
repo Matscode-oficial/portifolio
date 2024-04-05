@@ -177,14 +177,14 @@
 }
 
 .projeto-container .proj-boxes {
-    width: 15rem;
+    width: 12rem;
     height: fit-content;
     /* background-color: green; */
 }
 
 .projeto-container .proj-boxes .img-box {
     width: 100%;
-    height: 380px;
+    height: 340px;
     display: flex;
     padding: 20px;
     margin-bottom: 2rem;
@@ -192,7 +192,17 @@
     border-radius: var(--radius);
     overflow: hidden;
     background-color: var(--color-white);
-    box-shadow: 0px 0px 20px 2px #d7d7d7;
+    box-shadow: inset 0px 0px 16px 0px #b2b2b300;
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0));
+    position: relative;
+    top: 0;
+    transition: all .2s ease-in;
+}
+
+.projeto-container .proj-boxes .img-box:hover {
+    top: -10px;
+    box-shadow: inset 0px 0px 16px 0px #b2b2b34d;
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.09));
 }
 
 
@@ -209,6 +219,7 @@
 
 .projeto-container .desc-box h2 {
     text-transform: uppercase;
+    font-size: 18px;
     font-weight: 800;
 
 }
@@ -219,13 +230,138 @@
 }
 
 .stacks img {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     object-fit: cover;
 }
 
-.desc-box a{
-    font-size: 18px;
+.desc-box a {
+    font-size: 15px;
     font-weight: 600;
     color: var(--color-blue);
+}
+
+/* *Habilidades */
+.habilidades {
+    background-image: url(../img/fundo2.png);
+    background-size: cover;
+    background-color: var(--color-blue2);
+    background-blend-mode: color-dodge;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    padding: 90px 0px;
+}
+
+.skill-layout {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.skill-container {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap: 4rem;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0 4rem;
+}
+
+.skill-percent {
+    width: 355px;
+    height: 475px;
+}
+
+.box-percent {
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-white);
+    border-radius: var(--radius);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+.box-percent>h2 {
+    justify-self: flex-start;
+    margin-bottom: 30px;
+}
+
+.percent {
+    width: 100%;
+    justify-content: left;
+}
+
+.percent h3 {
+    font-weight: 900;
+}
+
+.percent-container {
+    display: flex;
+    align-items: center;
+    padding: 0 3px;
+}
+
+.percent-container div:nth-of-type(1) p {
+    margin-right: 2px;
+    justify-self: left;
+    font-weight: 800;
+    font-size: 12px;
+}
+
+.percent-container .barra-percent {
+    width: 100%;
+    height: 5px;
+}
+
+.percent-container .barra-percent .quantidade {
+    height: 100%;
+    border-radius: var(--radius);
+    background-color: var(--color-orange);
+}
+
+.quantidade.one {
+    width: 80%;
+}
+
+.quantidade.two {
+    width: 70%;
+}
+
+.quantidade.three {
+    width: 40%;
+}
+
+.quantidade.four {
+    width: 40%;
+}
+
+.quantidade.five {
+    width: 80%;
+}
+
+.quantidade.six {
+    width: 80%;
+}
+
+.percent-container div:nth-of-type(3) p {
+    margin-left: 2px;
+    font-weight: 800;
+    font-size: 12px;
+}
+
+.skills div {
+    display: flex;
+}
+
+.skills div img {
+    width: 50px;
+    margin-right: 5px;
+    border-radius: var(--radius);
 }
