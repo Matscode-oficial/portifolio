@@ -71,7 +71,7 @@
 
 /* *sobre-mim imagem */
 .image-me {
-    width: 300px;
+    width: 400px; /* 300 */
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -94,7 +94,9 @@
 }
 
 .image-me p {
+    font-size: 25px;
     font-weight: 700;
+    text-transform: uppercase;
 }
 
 /* *sobre mim box texto */
@@ -168,7 +170,6 @@
 
 /* *boxes projetos */
 .projeto-container {
-    /* background-color: red; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -179,7 +180,6 @@
 .projeto-container .proj-boxes {
     width: 12rem;
     height: fit-content;
-    /* background-color: green; */
 }
 
 .projeto-container .proj-boxes .img-box {
@@ -358,6 +358,7 @@
 
 .skills div {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .skills div img {
@@ -394,29 +395,29 @@
     padding-left: 2rem;
 }
 
-.contato-container{
+.contato-container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-.cont-medias{
+.cont-medias {
     display: flex;
     flex-direction: column;
     width: fit-content;
     align-items: center;
-    
+
 }
 
-.cont-medias figure{
+.cont-medias figure {
     padding: 15px;
     border-radius: 50%;
     display: flex;
     align-items: center;
-    margin-bottom: 20px ;
+    margin-bottom: 20px;
 }
 
-.cont-medias img{
+.cont-medias img {
     width: 60px;
     object-fit: 3/4;
 }
