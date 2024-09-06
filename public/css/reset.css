@@ -40,7 +40,6 @@ a {
 .limitador {
     max-width: 1280px;
     width: 100%;
-    /* background-color: rgb(187, 233, 187); */
     height: fit-content;
 }
 
@@ -51,7 +50,23 @@ a {
     background-size: cover;
     height: 40px;
     width: 50px;
+    animation: rotateStar 2s linear infinite;
 }
+
+@keyframes rotateStar {
+    0% {
+        transform: rotate(0deg);
+        width: 40px;
+    }
+    50% {
+        transform: rotate(180deg);
+        width: 45px;
+    }
+    100% {
+        transform: rotate(360deg);
+        width: 40px;
+    }
+  }
 
 .title {
     padding-left: 9px;
