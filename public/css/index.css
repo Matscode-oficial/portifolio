@@ -369,16 +369,33 @@
 
 /* *Educação */
 .educacao{
-    background-image: url(../img/fundo2.png);
+    background-image: url(../img/fundo1.png);
     background-size: cover;
-    background-color: var(--color-red);
-    background-blend-mode: luminosity;
+    background-color: #a1a1a1;
+    background-blend-mode:exclusion;
     width: 100%;
     height: fit-content;
     display: flex;
     justify-content: center;
     padding: 90px 0px;
 }
+
+.edu-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin: 0 25px;
+}
+
+.edu-box{
+    background-color: var(--color-white);
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
+    border-radius: var(--radius)
+}
+
 
 /* *CONTATOS */
 .contatos {
