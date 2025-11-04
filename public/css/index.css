@@ -71,7 +71,8 @@
 
 /* *sobre-mim imagem */
 .image-me {
-    width: 400px; /* 300 */
+    width: 400px;
+    /* 300 */
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -368,11 +369,11 @@
 
 
 /* *Educação */
-.educacao{
-    background-image: url(../img/fundo1.png);
+.educacao {
+    background-image: url(../img/fundo3.png);
     background-size: cover;
-    background-color: #a1a1a1;
-    background-blend-mode:exclusion;
+    background-color: #b5b5b5;
+    background-blend-mode: color-burn;
     width: 100%;
     height: fit-content;
     display: flex;
@@ -380,7 +381,7 @@
     padding: 90px 0px;
 }
 
-.edu-container{
+.edu-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -388,12 +389,87 @@
     margin: 0 25px;
 }
 
-.edu-box{
+.edu-box {
     background-color: var(--color-white);
     width: fit-content;
     height: fit-content;
     padding: 20px;
-    border-radius: var(--radius)
+    border-radius: var(--radius);
+    box-shadow: inset 0px 0px 0px 0px #b2b2b34c;
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.043));
+    position: relative;
+    top: 0;
+    transition: all .2s ease-in;
+}
+
+.edu-box:hover {
+    top: -10px;
+    box-shadow: inset 0px 0px 0px 0px #b2b2b34d;
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.09));
+}
+
+.edu-box h1 {
+    color: var(--color-blue);
+}
+
+.edu-box h2 {
+    color: var(--color-blue2);
+}
+
+.edu-box h3 {
+    color: var(--color-orange);
+}
+
+/* *Experience */
+.experience {
+    background-image: url(../img/fundo2.png);
+    background-size: cover;
+    background-color: var(--color-blue2);
+    background-blend-mode:color-dodge;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    padding: 90px 0px;
+}
+
+.xp-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin: 0 25px;
+}
+
+.xp-box {
+    background-color: var(--color-white);
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
+    border-radius: var(--radius);
+    box-shadow: inset 0px 0px 0px 0px #b2b2b34c;
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.043));
+    position: relative;
+    top: 0;
+    transition: all .2s ease-in;
+}
+
+.xp-box:hover {
+    top: -10px;
+    box-shadow: inset 0px 0px 0px 0px #b2b2b34d;
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.09));
+}
+
+.xp-box h1 {
+    color: var(--color-blue);
+}
+
+.xp-box h2 {
+    color: var(--color-blue2);
+}
+
+.xp-box h3 {
+    color: var(--color-orange);
 }
 
 
