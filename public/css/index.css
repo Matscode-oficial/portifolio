@@ -366,6 +366,20 @@
     border-radius: var(--radius);
 }
 
+
+/* *Educação */
+.educacao{
+    background-image: url(../img/fundo2.png);
+    background-size: cover;
+    background-color: var(--color-red);
+    background-blend-mode: luminosity;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    padding: 90px 0px;
+}
+
 /* *CONTATOS */
 .contatos {
     background-image: url(../img/fundo3.png);
